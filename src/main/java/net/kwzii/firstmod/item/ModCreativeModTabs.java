@@ -14,10 +14,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeModTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirstMod.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirstMod.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> FIRSTMOD_TAB = CREATIVE_MODE_TABS.register("firstmod_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MAXWELL.get()))
-            .title(Component.translatable("creativetab.firstmod_tab"))
+    public static final RegistryObject<CreativeModeTab> FIRSTMOD_TAB =
+            CREATIVE_MODE_TABS.register("firstmod_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MAXWELL.get()))
+                    .title(Component.translatable("creativetab.firstmod_tab"))
             .displayItems((itemDisplayParameters, output) -> {
                     // Add items to mod tab
                 for(RegistryObject<Item> item : ModItems.ITEMS.getEntries()) {

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "GDG",
+    " G "
+  ],
+  "key": {
+    "D": {
+      "item": "firstmod:dudey34_block"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "result": {
+    "item": "firstmod:glowstone34_block"
+  }
+}
