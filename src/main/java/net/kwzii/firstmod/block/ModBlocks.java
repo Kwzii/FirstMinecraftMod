@@ -24,6 +24,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
+    public static final RegistryObject<Block> DUDEY34_BLOCK = registerBlock("dudey34_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BRICKS).sound(SoundType.ANVIL)));
+
+    public static final RegistryObject<Block> GLOWSTONE34_BLOCK = registerBlock("glowstone34_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).lightLevel((p_152607_) -> 15)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -32,7 +37,6 @@ public class ModBlocks {
     }
 
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
