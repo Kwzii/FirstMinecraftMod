@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DDD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "item": "firstmod:dudey34"
+    }
+  },
+  "result": {
+    "item": "firstmod:maxwell"
+  }
+}

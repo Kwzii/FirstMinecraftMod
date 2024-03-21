@@ -2,7 +2,10 @@
   "item.firstmod.sapphire": "Sapphire",
   "item.firstmod.raw_sapphire": "Raw Sapphire",
   "item.firstmod.maxwell": "Maxwell",
-  "item.firstmod.david": "David",
+  "item.firstmod.dudey34": "Dudey34",
 
-  "creativetab.firstmod_tab": "Kwzii's First Mod Tab"
+  "block.firstmod.sapphire_block": "Block of Sapphire",
+  "block.firstmod.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "creativetab.firstmod_tab": "Kwzii's First Mod"
 }

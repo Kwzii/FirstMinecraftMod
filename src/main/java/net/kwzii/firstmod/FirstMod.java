@@ -1,6 +1,7 @@
 package net.kwzii.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.kwzii.firstmod.block.ModBlocks;
 import net.kwzii.firstmod.item.ModCreativeModTabs;
 import net.kwzii.firstmod.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -29,6 +30,7 @@ public class FirstMod {
 
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
