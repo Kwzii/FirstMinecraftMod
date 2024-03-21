@@ -1,5 +1,5 @@
-# Blank Mod Repo
+# First Minecraft Mod
 
-This is a repo to be copied whenever a new mod is being made.
+This is my first attempt at making a minecraft mod.
 
 Made by Kwzii
