@@ -1,6 +1,7 @@
 package net.kwzii.firstmod.item;
 
 import net.kwzii.firstmod.FirstMod;
+import net.kwzii.firstmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +19,9 @@ public class ModItems {
     public static final RegistryObject<Item> MAXWELL = ITEMS.register("maxwell", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> DUDEY34 = ITEMS.register("dudey34", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
