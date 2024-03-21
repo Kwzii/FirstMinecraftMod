@@ -1,3 +1,8 @@
 {
-  "item.firstmod.sapphire": "Sapphire"
+  "item.firstmod.sapphire": "Sapphire",
+  "item.firstmod.raw_sapphire": "Raw Sapphire",
+  "item.firstmod.maxwell": "Maxwell",
+  "item.firstmod.david": "David",
+
+  "creativetab.firstmod_tab": "Kwzii's First Mod Tab"
 }
