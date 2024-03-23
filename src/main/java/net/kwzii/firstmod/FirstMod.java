@@ -2,9 +2,12 @@ package net.kwzii.firstmod;
 
 import com.mojang.logging.LogUtils;
 import net.kwzii.firstmod.block.ModBlocks;
+import net.kwzii.firstmod.block.entity.ModBlockEntities;
 import net.kwzii.firstmod.item.ModCreativeModTabs;
 import net.kwzii.firstmod.item.ModItems;
-import net.minecraft.client.Minecraft;
+import net.kwzii.firstmod.screen.BettingTerminalScreen;
+import net.kwzii.firstmod.screen.ModMenuTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -29,8 +32,12 @@ public class FirstMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -62,9 +69,7 @@ public class FirstMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            MenuScreens.register(ModMenuTypes.BETTING_TERMINAL_MENU.get(), BettingTerminalScreen::new);
         }
     }
 }

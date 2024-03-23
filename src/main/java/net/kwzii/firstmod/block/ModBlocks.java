@@ -1,6 +1,8 @@
 package net.kwzii.firstmod.block;
 
 import net.kwzii.firstmod.FirstMod;
+import net.kwzii.firstmod.block.custom.BettingTerminalBlock;
+import net.kwzii.firstmod.block.custom.GambleTableBlock;
 import net.kwzii.firstmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -34,6 +36,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GLOWSTONE34_BLOCK = registerBlock("glowstone34_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE).lightLevel((p_152607_) -> 15)));
+
+    public static final RegistryObject<Block> GAMBLE_TABLE_BLOCK = registerBlock("gamble_table_block",
+            () -> new GambleTableBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<Block> BETTING_TERMINAL_BLOCK = registerBlock("betting_terminal_block",
+            () -> new BettingTerminalBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

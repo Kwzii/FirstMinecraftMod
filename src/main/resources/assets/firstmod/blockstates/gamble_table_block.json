@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "firstmod:block/gamble_table_block", "y": 180 },
+		"facing=east": { "model": "firstmod:block/gamble_table_block", "y": 270 },
+		"facing=south": { "model": "firstmod:block/gamble_table_block" },
+		"facing=west": { "model": "firstmod:block/gamble_table_block", "y": 90 }
+	}
+}
