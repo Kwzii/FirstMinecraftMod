@@ -36,7 +36,7 @@ public class ModItems {
     public static final RegistryObject<Item> DICE = ITEMS.register("dice",
             () -> new DiceItem(new Item.Properties()));
 
-    public static final RegistryObject<Item> DOUBLEDICE = ITEMS.register("double_dice",
+    public static final RegistryObject<Item> DOUBLE_DICE = ITEMS.register("double_dice",
             () -> new DoubleDiceItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
