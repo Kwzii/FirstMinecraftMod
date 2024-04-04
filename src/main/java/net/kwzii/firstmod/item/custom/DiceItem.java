@@ -6,8 +6,11 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Random;
 
 public class DiceItem extends Item {
@@ -36,5 +39,11 @@ public class DiceItem extends Item {
     public void sendRollMessage(Player pPlayer) {
         int roll = getRoll();
         pPlayer.sendSystemMessage(Component.literal(pPlayer.getScoreboardName() + " rolled a " + roll + "!"));
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        pTooltipComponents.add(Component.literal("Winners don't give up when faced with failure..."));
+        super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 }

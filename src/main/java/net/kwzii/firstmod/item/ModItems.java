@@ -3,6 +3,7 @@ package net.kwzii.firstmod.item;
 import net.kwzii.firstmod.FirstMod;
 import net.kwzii.firstmod.item.custom.DiceItem;
 import net.kwzii.firstmod.item.custom.DoubleDiceItem;
+import net.kwzii.firstmod.item.custom.FuelItem;
 import net.kwzii.firstmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,6 +26,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> DUDEY34 = ITEMS.register("dudey34",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DOLLAR_BILL = ITEMS.register("dollar_bill",
+            () -> new FuelItem(new Item.Properties(), 400));
 
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(100)));

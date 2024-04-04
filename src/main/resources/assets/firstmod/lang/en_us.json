@@ -6,11 +6,13 @@
   "item.firstmod.metal_detector": "Metal Detector",
   "item.firstmod.dice": "Dice",
   "item.firstmod.double_dice": "Pair of Dice",
+  "item.firstmod.dollar_bill": "One Dollar Bill",
+
+  "tooltip.firstmod.metal_detector.tooltip": "Finds valuables underground!",
 
   "block.firstmod.sapphire_block": "Block of Sapphire",
   "block.firstmod.raw_sapphire_block": "Block of Raw Sapphire",
   "block.firstmod.sapphire_ore": "Sapphire Ore",
-
   "block.firstmod.dudey34_block": "Block of Dudey34's",
   "block.firstmod.glowstone34_block": "Glowing Block of Dudey34's",
   "block.firstmod.gamble_table_block": "Table for Gambling",
