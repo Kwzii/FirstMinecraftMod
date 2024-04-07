@@ -10,13 +10,23 @@
 
   "tooltip.firstmod.metal_detector.tooltip": "Finds valuables underground!",
 
-  "block.firstmod.sapphire_block": "Block of Sapphire",
-  "block.firstmod.raw_sapphire_block": "Block of Raw Sapphire",
-  "block.firstmod.sapphire_ore": "Sapphire Ore",
   "block.firstmod.dudey34_block": "Block of Dudey34's",
   "block.firstmod.glowstone34_block": "Glowing Block of Dudey34's",
   "block.firstmod.gamble_table_block": "Table for Gambling",
   "block.firstmod.betting_terminal_block": "Betting Terminal",
+  "block.firstmod.sapphire_block": "Block of Sapphire",
+  "block.firstmod.raw_sapphire_block": "Block of Raw Sapphire",
+  "block.firstmod.sapphire_ore": "Sapphire Ore",
+
+  "block.firstmod.sapphire_stairs": "Sapphire Stairs",
+  "block.firstmod.sapphire_slab": "Sapphire Slab",
+  "block.firstmod.sapphire_button": "Sapphire Button",
+  "block.firstmod.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.firstmod.sapphire_fence": "Sapphire Fence",
+  "block.firstmod.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.firstmod.sapphire_wall": "Sapphire Wall",
+  "block.firstmod.sapphire_door": "Sapphire Door",
+
 
   "creativetab.firstmod_tab": "Kwzii's First Mod"
 }

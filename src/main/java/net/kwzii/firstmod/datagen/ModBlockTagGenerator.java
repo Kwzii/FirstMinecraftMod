@@ -29,7 +29,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
-                ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DUDEY34_BLOCK.get());
+                        ModBlocks.SAPPHIRE_ORE.get(),
+                        ModBlocks.DUDEY34_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.SAPPHIRE_BLOCK.get());
@@ -37,14 +38,27 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 //        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
 //                .add();
 
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
-                ModBlocks.SAPPHIRE_BLOCK.get(), ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DUDEY34_BLOCK.get(),
-                ModBlocks.BETTING_TERMINAL_BLOCK.get(), ModBlocks.GAMBLE_TABLE_BLOCK.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.RAW_SAPPHIRE_BLOCK.get(),
+                ModBlocks.SAPPHIRE_BLOCK.get(),
+                ModBlocks.SAPPHIRE_ORE.get(),
+                ModBlocks.DUDEY34_BLOCK.get(),
+                ModBlocks.BETTING_TERMINAL_BLOCK.get(),
+                ModBlocks.GAMBLE_TABLE_BLOCK.get());
 
-        this.tag(BlockTags.MINEABLE_WITH_AXE).add(ModBlocks.GAMBLE_TABLE_BLOCK.get());
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.GAMBLE_TABLE_BLOCK.get());
 
 //        this.tag(BlockTags.MINEABLE_WITH_HOE).add
 
 //        this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add
+
+        // THESE ARE REQUIRED BECAUSE OTHERWISE THE FENCES/WALLS WON'T CONNECT WITH EACH OTHER
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.SAPPHIRE_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.SAPPHIRE_WALL.get());
     }
 }
