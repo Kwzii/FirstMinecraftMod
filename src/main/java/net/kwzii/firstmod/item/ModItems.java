@@ -39,6 +39,9 @@ public class ModItems {
     public static final RegistryObject<Item> DOUBLE_DICE = ITEMS.register("double_dice",
             () -> new DoubleDiceItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
